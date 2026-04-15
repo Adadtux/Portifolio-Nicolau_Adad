@@ -240,24 +240,72 @@ const services = {
       Texto2_img1: "Descriçao do texto 2"
     },
     vpn: {
+      /**
       title: "VPN",
       img: "assets/img/vpn.jpg",
       desc: "Conexão segura e criptografada entre redes."
+      */
+      Titulo_1: "Qual o objetivo do Controle de Acesso ou ACL?",
+      img: "assets/img/servicos/ACLs.jpg",
+      Desc_titulo1: "O controle de acesso permite a empresa manter a confidencialidade das informaçoes",
+      Titulo_img1: "Empresas que gerenciam os usuarios atraves de ACLs garantem mais segurança aos seus dados",
+      Desc_imagem1: "O Relatorio estatistico aponta que 95% das empresas que realizam o gerenciamento por ACLs garantem mais segurança aos dados e aos seus sistemas informativos.",
+      Lista1_img1: "Descriçao da Lista1 da imagem 1",
+      Lista2_img1: "Descriçao da Lista2 da imagem 1",
+      Lista3_img1: "Descriçao da Lista3 da imagem 1",
+      Texto1_img1: "Descriçao do texto 1",
+      Texto2_img1: "Descriçao do texto 2"
     },
     redundancia: {
+      /**
       title: "Redundância de Links",
       img: "assets/img/redundancia.jpg",
       desc: "Garantia de conexão contínua mesmo com falhas."
+      */
+      Titulo_1: "Qual o objetivo do Controle de Acesso ou ACL?",
+      img: "assets/img/servicos/ACLs.jpg",
+      Desc_titulo1: "O controle de acesso permite a empresa manter a confidencialidade das informaçoes",
+      Titulo_img1: "Empresas que gerenciam os usuarios atraves de ACLs garantem mais segurança aos seus dados",
+      Desc_imagem1: "O Relatorio estatistico aponta que 95% das empresas que realizam o gerenciamento por ACLs garantem mais segurança aos dados e aos seus sistemas informativos.",
+      Lista1_img1: "Descriçao da Lista1 da imagem 1",
+      Lista2_img1: "Descriçao da Lista2 da imagem 1",
+      Lista3_img1: "Descriçao da Lista3 da imagem 1",
+      Texto1_img1: "Descriçao do texto 1",
+      Texto2_img1: "Descriçao do texto 2"
     },
     wifi: {
+      /**
       title: "Wifi Hotspot",
       img: "assets/img/wifi.jpg",
       desc: "Distribuição de internet sem fio controlada."
+      */
+      Titulo_1: "Qual o objetivo do Controle de Acesso ou ACL?",
+      img: "assets/img/servicos/ACLs.jpg",
+      Desc_titulo1: "O controle de acesso permite a empresa manter a confidencialidade das informaçoes",
+      Titulo_img1: "Empresas que gerenciam os usuarios atraves de ACLs garantem mais segurança aos seus dados",
+      Desc_imagem1: "O Relatorio estatistico aponta que 95% das empresas que realizam o gerenciamento por ACLs garantem mais segurança aos dados e aos seus sistemas informativos.",
+      Lista1_img1: "Descriçao da Lista1 da imagem 1",
+      Lista2_img1: "Descriçao da Lista2 da imagem 1",
+      Lista3_img1: "Descriçao da Lista3 da imagem 1",
+      Texto1_img1: "Descriçao do texto 1",
+      Texto2_img1: "Descriçao do texto 2"
     },
     monitoramento: {
+      /**
       title: "Monitoramento de Rede",
       img: "assets/img/monitoramento.jpg",
       desc: "Acompanhamento em tempo real da infraestrutura."
+      */
+      Titulo_1: "Qual o objetivo do Controle de Acesso ou ACL?",
+      img: "assets/img/servicos/ACLs.jpg",
+      Desc_titulo1: "O controle de acesso permite a empresa manter a confidencialidade das informaçoes",
+      Titulo_img1: "Empresas que gerenciam os usuarios atraves de ACLs garantem mais segurança aos seus dados",
+      Desc_imagem1: "O Relatorio estatistico aponta que 95% das empresas que realizam o gerenciamento por ACLs garantem mais segurança aos dados e aos seus sistemas informativos.",
+      Lista1_img1: "Descriçao da Lista1 da imagem 1",
+      Lista2_img1: "Descriçao da Lista2 da imagem 1",
+      Lista3_img1: "Descriçao da Lista3 da imagem 1",
+      Texto1_img1: "Descriçao do texto 1",
+      Texto2_img1: "Descriçao do texto 2"
     }
   };
 
@@ -268,6 +316,12 @@ const services = {
       e.preventDefault();
 
       const service = this.getAttribute("data-service");
+
+      if (!services[service]) {
+        console.log("Serviço nao encontrado:", service);
+        return;
+      }
+      
       /**
       document.getElementById("service-title").innerText = services[service].title;
       document.getElementById("service-desc").innerText = services[service].desc;
