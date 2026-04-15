@@ -316,10 +316,10 @@ const services = {
       e.preventDefault();
 
       //remove ativo de todos
-      links.forEach(1 => 1.classList.remove("active"));
+      //links.forEach(1 => 1.classList.remove("active"));
 
       //adiciona no clicado
-      this.classList.add("active");
+      //this.classList.add("active");
 
       const service = this.getAttribute("data-service");
 
