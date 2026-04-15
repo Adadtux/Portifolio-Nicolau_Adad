@@ -1273,7 +1273,13 @@ section,
 .starter-section {
   /* Add your styles here */
 }
-
+/* Funçao utilizada na pagina de serviços para destacas os itens da Lista*/
 .bold-font-mouse:hover {
   font-weight: bold;
 }
+
+.service-list a.active {
+  color: #0d6efd;
+  font-weight: bold;
+}
+
