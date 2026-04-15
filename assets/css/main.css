@@ -1273,3 +1273,7 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.bold-font-mouse:hover {
+  font-weight: bold;
+}
