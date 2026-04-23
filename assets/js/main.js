@@ -319,7 +319,7 @@ links.forEach(link => {
     e.preventDefault();
 
     // remove ativo de todos
-    links.forEach(1 => 1.classList.remove("active"));
+    links.forEach(l => l.classList.remove("active"));
 
     //adiciona "active" no item clicado
     this.classList.add("active");

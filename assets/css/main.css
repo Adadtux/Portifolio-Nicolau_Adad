@@ -1275,12 +1275,12 @@ section,
 .bold-font-mouse:hover {
   font-weight: bold;
 }
- /*
+ 
 .service-list a.active {
   color: #0d6efd;
   font-weight: bold;
 }
-*/
+
 /* Mudanca de opacidade das imagens na pagina Detalhes de Serviços*/
 #service-img {
   transition: opacity 0.4s ease-in-out;
